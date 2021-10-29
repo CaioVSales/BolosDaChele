@@ -24,11 +24,11 @@
         <form method="POST">
           {{ selling_form.hidden_tag() }}
           <h4 class="text-center">
-            Are you sure you want to sell {{ owned_item.name }} for {{ owned_item.price }}$ ?
+            Você tem certeza que deseja vender {{ owned_item.name }} por R${{ owned_item.price }} ?
           </h4>
           <br>
           <h6 class="text-center">
-            By clicking Sell, you will put this item back on market
+            Ao clicar em vender, você estará devolvendo o produto à Loja!
           </h6>
           <br>
           <input id="sold_item" name="sold_item" type="hidden" value="{{owned_item.name}}">
@@ -37,7 +37,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary"
-                data-dismiss="modal">Close
+                data-dismiss="modal">Fechar
         </button>
       </div>
     </div>
