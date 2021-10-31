@@ -8,7 +8,9 @@
     <div class="container">
         <form method="POST" class="form-signin" style="color:white">
             {{ form.hidden_tag() }}
-            <img class="mb-4" src="logo.png" alt="Logo HTML">
+
+            <img src="{{ url_for('static', filename='images/logo.png') }}">
+            
             <h1 class="h3 mb-3 font-weight-normal">
                 Por favor, conecte-se
             </h1>
